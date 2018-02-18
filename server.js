@@ -61,8 +61,10 @@ function createTemplate(data){
       </title>
   </head>
   <body>
-      <div>
+      <div class = "container">
+        <div class="row">
          ${content}
+        </div>
       </div>
   </body>
 </html>`
