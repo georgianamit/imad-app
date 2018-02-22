@@ -48,7 +48,7 @@ var articles={
 
     `
   }
-}
+};
 
 function createTemplate(data){
   title = data.title;
@@ -67,7 +67,7 @@ function createTemplate(data){
         </div>
       </div>
   </body>
-</html>`
+</html>`;
 return template;
 }
 
