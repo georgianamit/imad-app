@@ -107,7 +107,7 @@ app.get('/test-db',function(req,res){
             res.send(JSON.stringigy(result));
         }
     });
-})
+});
 
 
 // Do not change port, otherwise your app won't run on IMAD servers
