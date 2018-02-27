@@ -98,7 +98,15 @@ app.get('/test-db',function(req,res){
 
 app.get('/:articlename', function (req, res) {
   var articlename = req.params.articlename;
-  res.send(createTemplate(articles[articlename]));
+  
+  pool.query("select * from article where title='"+req.params.articlename+"'",function (err,result){
+      if(err){
+          res.status(500).send(err.toString());
+      }else{
+            res.send(createTemplate(articles[articlename]));
+      }
+  });
+
 });
 
 app.get('/ui/style.css', function (req, res) {
