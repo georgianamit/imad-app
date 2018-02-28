@@ -33,7 +33,7 @@ function createTemplate(data){
         <div class="row">
             <a href="/">Home</a>|<a href="/articles/article-one">Article one</a>
             </hr>
-            <p class="text-primary">${heading}</p>
+            <div class="text-primary">${heading}</div>
             <p class="text-success">${date}</p>
         </div>
          
