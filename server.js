@@ -14,50 +14,7 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
-var articles={
-  'article_one': {
-    title: "Article one | spider",
-    content: `
-          <p>
-              Hello, welcome to first article of this page. Its been so long we have contacted each other. And this is not
-              the way you can acheive the heights of success. You have to work smart. Everyone don't have same purpose in life.
-              So, stop pushing others to work according to you.
-          </p>
-          <p>
-              Hello, welcome to first article of this page. Its been so long we have contacted each other. And this is not
-              the way you can acheive the heights of success. You have to work smart. Everyone don't have same purpose in life.
-              So, stop pushing others to work according to you.
-          </p>
-          <p>
-              Hello, welcome to first article of this page. Its been so long we have contacted each other. And this is not
-              the way you can acheive the heights of success. You have to work smart. Everyone don't have same purpose in life.
-              So, stop pushing others to work according to you.
-          </p>
-    `
-  },
-  'article_two': {
-    title: "Article two | spider",
-    content: `
-          <p>
-              Hello, welcome to second article of this page. Its been so long we have contacted each other. And this is not
-              the way you can acheive the heights of success. You have to work smart. Everyone don't have same purpose in life.
-              So, stop pushing others to work according to you.
-          </p>
-
-    `
-  },
-  'article_three':{
-    title: "Article three | spider",
-    content: `
-          <p>
-              Hello, welcome to three article of this page. Its been so long we have contacted each other. And this is not
-              the way you can acheive the heights of success. You have to work smart. Everyone don't have same purpose in life.
-              So, stop pushing others to work according to you.
-          </p>
-
-    `
-  }
-};
+ 
 
 function createTemplate(data){
   title = data.title;
