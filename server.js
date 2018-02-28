@@ -53,7 +53,7 @@ app.get('/test-db',function(req,res){
     });
 });
 
-app.get('articles/:articlename', function (req, res) {
+app.get('/articles/:articlename', function (req, res) {
   
   pool.query("select * from article where title= $1",[req.params.articlename],function (err,result){
       if(err){
