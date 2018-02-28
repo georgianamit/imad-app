@@ -31,7 +31,7 @@ function createTemplate(data){
   <body>
       <div class = "container">
         <div class="row">
-            <a href="/">Home</a>|<a href="/articles/article-one">Article one</a>
+            <a href="/">Home</a>|<a href="/articles/article-one">Article one</a>|<a href="/articles/article-two">Article two</a>|<a href="/articles/article-three">Article three</a>
             </hr>
             <p class="text-primary">${heading}</p>
             <p class="text-success">${date}</p>
