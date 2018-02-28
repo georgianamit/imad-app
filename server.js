@@ -18,6 +18,8 @@ app.use(morgan('combined'));
 
 function createTemplate(data){
   title = data.title;
+  heading = data.heading;
+  date = data.date;
   content = data.content;
   template = `
   <html>
@@ -28,6 +30,13 @@ function createTemplate(data){
   </head>
   <body>
       <div class = "container">
+        <div class="row">
+            <a href="/">Home</a>|<a href="/articles/article-one">Article one</a>
+            </hr>
+            <p class="text-primary">${heading}</p>
+            <p class="text-success">${date}</p>
+        </div>
+         
         <div class="row">
          ${content}
         </div>
